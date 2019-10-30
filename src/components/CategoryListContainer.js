@@ -4,6 +4,7 @@ import * as request from "superagent";
 import { connect } from "react-redux";
 import CategoryList from "./CategoryList";
 import { getCategories } from "../actions/category";
+import "./category.css";
 
 class CategoryListContainer extends Component {
 	componentDidMount() {

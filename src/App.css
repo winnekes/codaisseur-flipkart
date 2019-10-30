@@ -1,15 +1,16 @@
 body {
-  background: url(https://images.unsplash.com/photo-1479292889369-1a48f234247e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2016&q=80) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	background: url(https://images.unsplash.com/photo-1479292889369-1a48f234247e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2016&q=80)
+		no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
-
 .container {
-  margin: 100px;
-  padding: 30px;
-  min-height: 500px;
-  background: white;
+	margin: 100px;
+	padding: 30px;
+	min-height: 500px;
+	background: white;
+	display: flex;
 }

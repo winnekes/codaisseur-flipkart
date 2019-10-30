@@ -10,7 +10,7 @@ export default function ProductCard(props) {
             <Card.Body>
                 <Card.Title>{product.name}</Card.Title>
                 <Card.Text>
-                    Fake description
+                    <p>{product.description}</p>
                     <p>Price: {product.price}€</p>
                 </Card.Text>
                 <Button variant="primary" block>

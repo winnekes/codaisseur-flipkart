@@ -7,19 +7,21 @@ import { Route } from "react-router-dom";
 
 import { Provider } from "react-redux";
 import Navigation from "./components/Navigation";
-
-import { Container } from "react-bootstrap";
 import CategoryListContainer from "./components/CategoryListContainer";
 
+import { Container } from 'react-bootstrap';
+import ProductsListContainer from './components/ProductsListContainer';
+
 function App() {
-	return (
-		<Provider store={store}>
-			<Navigation />
-			<Container>
-				<CategoryListContainer />
-			</Container>
-		</Provider>
-	);
+    return (
+        <Provider store={store}>
+            <Navigation />
+            <Container>
+                      <Route exact path="/" component={CategoryListContainer}></Route>
+                <Route exact path="/" component={ProductsListContainer}></Route>
+            </Container>
+        </Provider>
+    );
 }
 
 export default App;

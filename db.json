@@ -5,6 +5,7 @@
             "categoryId": 4,
             "name": "Product 1",
             "imageUrl": "https://picsum.photos/400?image=696",
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
             "inStock": true,
             "price": "3432"
         },
@@ -13,6 +14,7 @@
             "categoryId": 1,
             "name": "Product 2",
             "imageUrl": "https://picsum.photos/400?image=230",
+            "description": "Aliquam tincidunt mauris eu risus.",
             "inStock": false,
             "price": "2374"
         },
@@ -21,6 +23,7 @@
             "categoryId": 4,
             "name": "Product 3",
             "imageUrl": "https://picsum.photos/400?image=277",
+            "description": "Vestibulum auctor dapibus neque.",
             "inStock": false,
             "price": "1942"
         },
@@ -28,7 +31,8 @@
             "id": 4,
             "categoryId": 3,
             "name": "Product 4",
-            "imageUrl": "https://picsum.photos/400?image=963",
+            "imageUrl": "https://picsum.photos/400?image=696",
+            "description": "Vestibulum commodo felis quis tortor.",
             "inStock": true,
             "price": "2367"
         },
@@ -37,6 +41,7 @@
             "categoryId": 3,
             "name": "Product 5",
             "imageUrl": "https://picsum.photos/400?image=637",
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
             "inStock": false,
             "price": "1991"
         },
@@ -45,6 +50,7 @@
             "categoryId": 3,
             "name": "Product 6",
             "imageUrl": "https://picsum.photos/400?image=811",
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
             "inStock": true,
             "price": "1956"
         },
@@ -53,6 +59,7 @@
             "categoryId": 2,
             "name": "Product 7",
             "imageUrl": "https://picsum.photos/400?image=616",
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
             "inStock": false,
             "price": "2005"
         },
@@ -61,6 +68,7 @@
             "categoryId": 4,
             "name": "Product 8",
             "imageUrl": "https://picsum.photos/400?image=522",
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
             "inStock": false,
             "price": "1358"
         },
@@ -69,6 +77,7 @@
             "categoryId": 3,
             "name": "Product 9",
             "imageUrl": "https://picsum.photos/400?image=615",
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
             "inStock": false,
             "price": "2345"
         },
@@ -76,7 +85,8 @@
             "id": 10,
             "categoryId": 1,
             "name": "Product 10",
-            "imageUrl": "https://picsum.photos/400?image=601",
+            "imageUrl": "https://picsum.photos/400?image=696",
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
             "inStock": false,
             "price": "1823"
         },
@@ -85,6 +95,7 @@
             "categoryId": 1,
             "name": "Product 11",
             "imageUrl": "https://picsum.photos/400?image=314",
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
             "inStock": true,
             "price": "1752"
         },
@@ -93,6 +104,7 @@
             "categoryId": 4,
             "name": "Product 12",
             "imageUrl": "https://picsum.photos/400?image=442",
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
             "inStock": true,
             "price": "2196"
         },
@@ -101,6 +113,7 @@
             "categoryId": 4,
             "name": "Product 13",
             "imageUrl": "https://picsum.photos/400?image=338",
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
             "inStock": true,
             "price": "3276"
         },
@@ -109,6 +122,7 @@
             "categoryId": 4,
             "name": "Product 14",
             "imageUrl": "https://picsum.photos/400?image=739",
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
             "inStock": false,
             "price": "1454"
         },
@@ -117,6 +131,7 @@
             "categoryId": 4,
             "name": "Product 15",
             "imageUrl": "https://picsum.photos/400?image=901",
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
             "inStock": false,
             "price": "1368"
         },
@@ -125,6 +140,7 @@
             "categoryId": 3,
             "name": "Product 16",
             "imageUrl": "https://picsum.photos/400?image=372",
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
             "inStock": false,
             "price": "2087"
         },
@@ -133,6 +149,7 @@
             "categoryId": 1,
             "name": "Product 17",
             "imageUrl": "https://picsum.photos/400?image=264",
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
             "inStock": true,
             "price": "2523"
         },
@@ -141,6 +158,7 @@
             "categoryId": 1,
             "name": "Product 18",
             "imageUrl": "https://picsum.photos/400?image=133",
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
             "inStock": true,
             "price": "1118"
         },
@@ -148,7 +166,8 @@
             "id": 19,
             "categoryId": 2,
             "name": "Product 19",
-            "imageUrl": "https://picsum.photos/400?image=359",
+            "imageUrl": "https://picsum.photos/400?image=696",
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
             "inStock": false,
             "price": "1966"
         },
@@ -157,6 +176,7 @@
             "categoryId": 1,
             "name": "Product 20",
             "imageUrl": "https://picsum.photos/400?image=354",
+            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
             "inStock": false,
             "price": "2569"
         }

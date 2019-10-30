@@ -1,16 +1,20 @@
 import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import store from './store';
 
 import { Route } from 'react-router-dom';
 
 import { Provider } from 'react-redux';
-import Header from './components/Header';
+import Navigation from './components/Navigation';
+
+import { Container } from 'react-bootstrap';
 
 function App() {
     return (
         <Provider store={store}>
-            <Route exact path="/" component={Header} />
+            <Navigation />
+            <Container>Input</Container>
         </Provider>
     );
 }

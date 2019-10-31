@@ -23,6 +23,7 @@ class ShoppingCartContainer extends Component {
                     this.props.cart,
                     this.props.products
                 )}
+                clearCart={this.props.clearCart}
             />
         );
     }
@@ -31,7 +32,7 @@ const mapStateToProps = state => {
     return {
         products: state.products.products,
         cart: state.cart.cart,
-        total: state.cart.total
+        total: state.cart.total.toFixed(2)
     };
 };
 

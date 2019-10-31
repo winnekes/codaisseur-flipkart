@@ -62,6 +62,7 @@ function ShoppingCart(props) {
                         Clear whole cart
                     </Button>{' '}
                     <br />
+                    <br />
                     <Link to="/">Back to our awesome store!</Link>
                 </div>
             )}

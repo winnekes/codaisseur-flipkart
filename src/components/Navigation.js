@@ -120,6 +120,9 @@ class Navigation extends Component {
 							</Button>
 						</Form>
 					</Navbar.Collapse>
+					<Nav.Item>
+						<i class="fa fa-heart-o" aria-hidden="false"></i>
+					</Nav.Item>
 				</Navbar>
 			</div>
 		);

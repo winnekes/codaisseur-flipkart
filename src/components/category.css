@@ -1,3 +1,11 @@
 .categoryClass {
 	width: 300px;
 }
+
+.navClass:hover {
+	cursor: pointer;
+}
+
+.navClass {
+	padding: 10px;
+}

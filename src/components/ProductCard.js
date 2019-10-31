@@ -14,8 +14,9 @@ function ProductCard(props) {
             <Card.Body>
                 <Card.Title>{product.name}</Card.Title>
                 <Card.Text>
-                    <p>{product.description}</p>
-                    <p>Price: {product.price}€</p>
+                    {product.description}
+                    <br />
+                    Price: {product.price}€
                 </Card.Text>
                 <Button
                     variant="primary"

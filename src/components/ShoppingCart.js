@@ -2,50 +2,43 @@ import React from 'react';
 import { Table } from 'react-bootstrap';
 import './shoppingcart.css';
 
-export default function ShoppingCart() {
+import { Link } from 'react-router-dom';
+export default function ShoppingCart(props) {
     return (
         <div className="shopping-cart">
             <h1>Your shopping cart</h1>
-            <Table striped bordered hover>
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Product</th>
-                        <th>Description</th>
-                        <th>Item count</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td colSpan="2">Larry the Bird</td>
-                        <td>@twitter</td>
-                        <td>@mdo</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colSpan="3">Total:</td>
-                        <td>10</td>
-                        <td>1000€</td>
-                    </tr>
-                </tfoot>
-            </Table>
+            {props.products.length < 1 && <p>Your cart is empty</p>}
+
+            <Link to="/">back to home</Link>
+            {props.products.length > 0 && (
+                <Table bordered hover>
+                    <tbody>
+                        {props.products.map(product => {
+                            return (
+                                <tr key={product.id}>
+                                    <td>
+                                        <img
+                                            className="product-img"
+                                            alt={product.name}
+                                            src={product.imageUrl}
+                                        />
+                                    </td>
+                                    <td>{product.name}</td>
+                                    <td>{product.description}</td>
+                                    <td>{product.quantity}</td>
+                                    <td>{product.price}€</td>
+                                </tr>
+                            );
+                        })}
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colSpan="4">Total:</td>
+                            <td>{props.total}€</td>
+                        </tr>
+                    </tfoot>
+                </Table>
+            )}
         </div>
     );
 }

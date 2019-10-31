@@ -4,14 +4,34 @@ import ShoppingCart from './ShoppingCart';
 import { connect } from 'react-redux';
 
 class ShoppingCartContainer extends Component {
+    getProductDetails = (cart, products) => {
+        let productsFromCartWithDetails = cart.map(cartProduct =>
+            products.find(product => product.id === cartProduct.productId)
+        );
+
+        return productsFromCartWithDetails.map((product, index) => {
+            return { ...product, quantity: cart[index].quantity };
+        });
+    };
+
     render() {
-        return <ShoppingCart />;
+        return (
+            <ShoppingCart
+                cart={this.props.cart}
+                total={this.props.total}
+                products={this.getProductDetails(
+                    this.props.cart,
+                    this.props.products
+                )}
+            />
+        );
     }
 }
 const mapStateToProps = state => {
     return {
         products: state.products.products,
-        cart: state.cart
+        cart: state.cart.cart,
+        total: state.cart.total
     };
 };
 

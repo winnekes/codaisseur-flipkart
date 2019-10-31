@@ -224,5 +224,19 @@
 			"id": 6,
 			"name": "Tablets"
 		}
+	],
+	"users": [
+		{
+			"userid": 1,
+			"username": "SW",
+			"password": "Test123",
+			"role": "admin"
+		},
+		{
+			"userid": 2,
+			"username": "LJ",
+			"password": "Test345",
+			"role": "user"
+		}
 	]
 }

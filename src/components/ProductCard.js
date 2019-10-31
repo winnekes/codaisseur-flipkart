@@ -7,8 +7,10 @@ function ProductCard(props) {
     const product = props.product;
 
     return (
-        <Card className="product-card" style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={product.imageUrl} />
+        <Card className="product-card" style={{ width: '200px' }}>
+            <div className="image">
+                <Card.Img variant="top" src={product.imageUrl} />
+            </div>
             <Card.Body>
                 <Card.Title>{product.name}</Card.Title>
                 <Card.Text>

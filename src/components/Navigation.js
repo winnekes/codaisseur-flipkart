@@ -5,10 +5,14 @@ import { getUsers } from "../actions/User";
 import "./navigation.css";
 import { connect } from "react-redux";
 import "bootstrap/dist/css/bootstrap.min.css";
+import store from "../store";
+import { searchProducts } from "../actions/products";
+
 class Navigation extends Component {
 	state = {
 		username: "",
 		password: "",
+		search: "",
 		authorisedUser: "",
 		authorisedUsername: ""
 	};
@@ -55,6 +59,17 @@ class Navigation extends Component {
 
 		return getUser;
 	};
+	handleSearch = event => {
+		event.preventDefault();
+		console.log("in search");
+
+		const productFound = store
+			.getState()
+			.products.products.filter(product => product.name === this.state.search);
+
+		console.log(productFound);
+		this.props.searchProducts(productFound);
+	};
 	render() {
 		console.log(this.state.authorisedUser);
 		return (
@@ -91,13 +106,18 @@ class Navigation extends Component {
 								Login
 							</Button>
 						</Form>
-						<Form inline>
+						<Form inline onSubmit={this.handleSearch}>
 							<FormControl
 								type="text"
 								placeholder="Search"
 								className="mr-sm-2"
+								name="search"
+								value={this.state.search}
+								onChange={this.handleChange}
 							/>
-							<Button variant="outline-success">Search</Button>
+							<Button type="submit" variant="outline-success">
+								Search
+							</Button>
 						</Form>
 					</Navbar.Collapse>
 				</Navbar>
@@ -115,5 +135,5 @@ const mapStateToProps = reduxState => {
 };
 export default connect(
 	mapStateToProps,
-	{ validateUser, getUsers }
+	{ validateUser, getUsers, searchProducts }
 )(Navigation);

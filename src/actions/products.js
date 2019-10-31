@@ -32,3 +32,21 @@ export function getProducts() {
 			.catch(err => console.log(err));
 	};
 }
+
+export const SEARCH_PRODUCTS = "SEARCH_PRODUCTS";
+
+export function searchProducts(products) {
+	return {
+		type: SEARCH_PRODUCTS,
+		payload: products
+	};
+}
+
+export const RESET_SEARCH = "RESET_SEARCH";
+
+export function resetSearch() {
+	console.log("reset action");
+	return {
+		type: RESET_SEARCH
+	};
+}

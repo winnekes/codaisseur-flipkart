@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import * as request from "superagent";
-
 import { connect } from "react-redux";
 import CategoryList from "./CategoryList";
 import { getCategories } from "../actions/category";
@@ -19,7 +18,11 @@ class CategoryListContainer extends Component {
 		} else {
 			return (
 				<div>
-					<CategoryList category={this.props.category} />
+					<CategoryList
+						category={this.props.category}
+						clickCategory={this.clickCategory}
+						dispatch={this.props.dispatch}
+					/>
 				</div>
 			);
 		}
@@ -36,7 +39,6 @@ const mapStateToProps = reduxState => {
 
 export default connect(
 	mapStateToProps,
-
 	{ getCategories }
 )(CategoryListContainer);
 

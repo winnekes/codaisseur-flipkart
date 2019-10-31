@@ -1,0 +1,13 @@
+.shopping-cart {
+    text-align: center;
+    justify-self: center;
+
+}
+
+.shopping-cart table {
+    margin-top: 50px;
+}
+
+.shopping-cart .product-img {
+    width: 100px;
+}

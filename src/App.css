@@ -10,9 +10,10 @@ body {
 	margin: 100px;
 	padding: 30px;
 	min-height: 500px;
+	max-width: 800px;
 	background: white;
 	display: flex;
-	justify-content: center;
+	justify-content: left;
 }
 
 h1 {

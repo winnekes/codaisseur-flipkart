@@ -5,8 +5,9 @@ import { getUsers } from "../actions/User";
 import "./navigation.css";
 import { connect } from "react-redux";
 import "bootstrap/dist/css/bootstrap.min.css";
-import store from "../store";
+import { Link } from "react-router-dom";
 import { searchProducts } from "../actions/products";
+import { FaHeart } from "react-icons/fa";
 
 class Navigation extends Component {
 	state = {
@@ -61,17 +62,11 @@ class Navigation extends Component {
 	};
 	handleSearch = event => {
 		event.preventDefault();
-		console.log("in search");
 
-		const productFound = store
-			.getState()
-			.products.products.filter(product => product.name === this.state.search);
-
-		console.log(productFound);
-		this.props.searchProducts(productFound);
+		this.props.searchProducts(this.state.search);
+		this.setState({ search: "" });
 	};
 	render() {
-		console.log(this.state.authorisedUser);
 		return (
 			<div>
 				{this.state.authorisedUser === false && (
@@ -120,9 +115,12 @@ class Navigation extends Component {
 							</Button>
 						</Form>
 					</Navbar.Collapse>
-					<Nav.Item>
-						<i class="fa fa-heart-o" aria-hidden="false"></i>
-					</Nav.Item>
+					<Nav className="shopping-cart-icon">
+						<Link to="/wishlist">
+							<FaHeart size="2rem" color="red" className="spacing"></FaHeart>
+						</Link>
+						(<span>{this.props.wishCount}</span>)
+					</Nav>
 				</Navbar>
 			</div>
 		);
@@ -133,7 +131,8 @@ const mapStateToProps = reduxState => {
 	console.log("mapstate?", reduxState.users.users);
 	return {
 		users: reduxState.users.users,
-		validUser: reduxState.validUser
+		validUser: reduxState.validUser,
+		wishCount: reduxState.wishlist.wishlist.length
 	};
 };
 export default connect(

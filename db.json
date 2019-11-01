@@ -48,7 +48,7 @@
 		{
 			"id": 6,
 			"categoryId": 3,
-			"name": "Product 6",
+			"name": "ProductXX 6",
 			"imageUrl": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSk79G6IP7cvHUm7Fb1FwLYaE44pGTwXK3LNzszTBz6ET2KDYHa8wczIcrd8F7CJwvEwnpqeZa5gEvCGz0Ba0RbjCmtxiaOJOTl4w_wAzbRQP-U93RE4z-lKQ&usqp=CAc",
 			"description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
 			"inStock": true,
@@ -57,7 +57,7 @@
 		{
 			"id": 7,
 			"categoryId": 2,
-			"name": "Product 7",
+			"name": "ProductYY 7",
 			"imageUrl": "https://rukminim1.flixcart.com/image/612/612/jtyouq80/cases-covers/back-cover/p/s/c/flipkart-smartbuy-rn7-matte-blk-original-imaff6xzgkcghjgn.jpeg?q=70",
 			"description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
 			"inStock": false,

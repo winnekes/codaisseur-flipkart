@@ -1,39 +1,51 @@
 import React, { Component } from "react";
+import * as request from "superagent";
 import { connect } from "react-redux";
-
 import ProductsList from "./ProductsList";
 import { getProducts } from "../actions/products";
-
 import "./products.css";
 
 class ProductsListContainer extends Component {
-	componentDidMount = () => {
+	componentDidMount() {
 		this.props.getProducts();
-	};
+	}
 
 	render() {
-		return <ProductsList products={this.props.products} />;
+		if (!this.props.products) {
+			return <p>Loading...</p>;
+		} else {
+			return <ProductsList products={this.props.products} />;
+		}
 	}
 }
 
+const getFilteredProductList = (products, filter, categoryId, searchText) => {
+	switch (filter) {
+		case "SHOW_PRODUCTS_BY_CATEGORY":
+			if (categoryId === 0) {
+				return products;
+			}
+			return products.filter(product => product.categoryId === categoryId);
+		case "SHOW_PRODUCTS_BY_SEARCH":
+			return products.filter(product =>
+				product.name.toLowerCase().includes(searchText.toLowerCase())
+			);
+		default:
+			return products;
+	}
+};
+
 const mapStateToProps = state => {
-	console.log("mapstate:", state.searchedProducts);
-	if (state.selectCategory !== null && state.selectCategory > 0) {
-		return {
-			products: state.products.products.filter(
-				product => product.categoryId === state.selectCategory
-			)
-		};
-	}
-	if (state.searchedProducts.searchList.length > 0) {
-		console.log("in search");
-		return {
-			products: state.searchedProducts.searchList.map(search =>
-				state.products.products.find(product => product.name === search.name)
-			)
-		};
-	}
-	return { products: state.products.products };
+	console.log("mapstate:", state.products.products);
+
+	return {
+		products: getFilteredProductList(
+			state.products.products,
+			state.products.visibilityFilter,
+			state.products.categoryId,
+			state.products.searchText
+		)
+	};
 };
 
 export default connect(

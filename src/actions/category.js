@@ -18,12 +18,3 @@ export function getCategories() {
 			});
 	};
 }
-
-export const SELECT_CATEGORY = "SELECT_CATEGORY";
-export function clickCategory(id) {
-	console.log(`in click ${id}`);
-	return {
-		type: SELECT_CATEGORY,
-		payload: id
-	};
-}

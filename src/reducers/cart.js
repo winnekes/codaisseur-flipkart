@@ -42,6 +42,12 @@ export default (state = initialState, action) => {
                 cart: [],
                 total: 0
             };
+
+        case 'APPLY_DISCOUNT':
+            return {
+                ...state,
+                total: state.total - (state.total / 100) * action.payload
+            };
         default:
             return state;
     }

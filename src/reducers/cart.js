@@ -34,7 +34,7 @@ export default (state = initialState, action) => {
                 cart: state.cart.filter(
                     product => product.productId !== action.payload.productId
                 ),
-                total: state.total - action.payload.price
+                total: state.total - parseFloat(action.payload.price)
             };
         case 'CLEAR_CART':
             return {

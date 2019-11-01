@@ -139,3 +139,4 @@ export default connect(
 	mapStateToProps,
 	{ validateUser, getUsers, searchProducts }
 )(Navigation);
+

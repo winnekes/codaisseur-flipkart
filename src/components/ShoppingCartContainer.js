@@ -14,22 +14,28 @@ class ShoppingCartContainer extends Component {
 		});
 	};
 
-	render() {
-		return (
-			<ShoppingCart
-				cart={this.props.cart}
-				total={this.props.total}
-				products={this.getProductDetails(this.props.cart, this.props.products)}
-			/>
-		);
-	}
+
+    render() {
+        return (
+            <ShoppingCart
+                cart={this.props.cart}
+                total={this.props.total}
+                products={this.getProductDetails(
+                    this.props.cart,
+                    this.props.products
+                )}
+                clearCart={this.props.clearCart}
+            />
+        );
+    }
 }
 const mapStateToProps = state => {
-	return {
-		products: state.products.products,
-		cart: state.cart.cart,
-		total: state.cart.total
-	};
+    return {
+        products: state.products.products,
+        cart: state.cart.cart,
+        total: state.cart.total.toFixed(2)
+    };
+
 };
 
 export default connect(

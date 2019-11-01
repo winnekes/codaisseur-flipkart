@@ -2,18 +2,17 @@
 	margin-right: 10px;
 }
 
-.shopping-cart-icon {
+.wishlist-cart-icons {
 	line-height: 30px;
 	font-size: 15px;
-
 	color: darkgray;
 }
 
-.shopping-cart-icon .spacing {
-	margin-right: 10px
+.wishlist-cart-icons .spacing {
+	margin-right: 10px;
 }
 
-.shopping-cart-icon span {
+.wishlist-cart-icons span {
 	color: blue;
 	line-height: 30px;
 	font-size: 15px;

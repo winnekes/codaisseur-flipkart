@@ -1,0 +1,21 @@
+.categoryClass {
+	width: 280px;
+	border-right: 1px solid lightgray;
+	margin-right: 30px;
+	padding-right: 10px;
+}
+
+.categoryClass a {
+	border-top: 1px solid lightgray;
+	width: 100%;
+	display: block;
+	padding-top: 20px;
+}
+
+.navClass:hover {
+	cursor: pointer;
+}
+
+.navClass {
+	padding: 10px;
+}

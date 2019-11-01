@@ -1,0 +1,242 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"categoryId": 4,
+			"name": "Samsung Portable Speakers",
+			"imageUrl": "https://rukminim1.flixcart.com/image/832/832/speaker/desktop-speaker-laptop-speaker-no-usb-power/x/z/u/iball-piano-i2-460-original-imaefhsaput3yhdw.jpeg?q=70",
+			"description": "Listen to music in stellar quality with this boAt speaker. With a multitude of features, such as 7-hours of playback time, water-resistant, and easy access control, this speaker ensures a fulfilling aural experience.",
+			"inStock": true,
+			"price": "3432"
+		},
+		{
+			"id": 2,
+			"categoryId": 1,
+			"name": "Dell-100  Laptop",
+			"imageUrl": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQPV2cEHy-KU6aGWOmmVD4kQy5YYuaDA_Vv5cmb8d66innb8z3N6-31jS4DhYpJjQ-U_XLI7DShoti68Y_DZjAMooU_b-Ahsdx41v8ugb_PhnXfl1B2Glmxeg&usqp=CAc",
+			"description": "Light Laptop without Optical Disk Drive",
+			"inStock": false,
+			"price": "2374"
+		},
+		{
+			"id": 3,
+			"categoryId": 4,
+			"name": "White Bluetooth Speaker",
+			"imageUrl": "https://rukminim1.flixcart.com/image/612/612/jn6ck280/speaker/mobile-tablet-speaker/d/a/9/mi-mdz-28-di-original-imaf9hpzgavtqkeu.jpeg?q=70",
+			"description": "Wireless music streaming via Bluetooth.",
+			"inStock": false,
+			"price": "1942"
+		},
+		{
+			"id": 4,
+			"categoryId": 3,
+			"name": "Sony 310AP Wired Headset with Mic",
+			"imageUrl": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRjvGdmAOJJIuXqoqJtD--cztrUzMzwHmq-yM7adancqXBwF0OH6HUboOkxRDkZrwZd5XYeCXPWfnhMtlxwl1c6WTEfIZREo9w4xQYRJW8TTC5RMpVkvJUTBQ&usqp=CAc",
+			"description": "Enjoy enhanced and immersive listening.",
+			"inStock": true,
+			"price": "2367"
+		},
+		{
+			"id": 5,
+			"categoryId": 3,
+			"name": "Sony  Google Assistant enabled Bluetooth Headset with Mic",
+			"imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTDQhGdo32wpN_8AbVFNnFwrLJLVNNfKLiYnRjFuyF_ph-5k68nUpoxATuaQAAHnYF8S-jhvSuCR9PXIjIbnrPZeLWMzibIeQAuKDqZYY1Ye1D4VuFzO4mnHw&usqp=CAc",
+			"description": "Music on the go with Sony",
+			"inStock": false,
+			"price": "1991"
+		},
+		{
+			"id": 6,
+			"categoryId": 3,
+			"name": "Sony WH-CH500 Google Assistant enabled Bluetooth Headset with Mic",
+			"imageUrl": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSk79G6IP7cvHUm7Fb1FwLYaE44pGTwXK3LNzszTBz6ET2KDYHa8wczIcrd8F7CJwvEwnpqeZa5gEvCGz0Ba0RbjCmtxiaOJOTl4w_wAzbRQP-U93RE4z-lKQ&usqp=CAc",
+			"description": "Enjoy music on Bluetooth",
+			"inStock": true,
+			"price": "1956"
+		},
+		{
+			"id": 7,
+			"categoryId": 2,
+			"name": "Samsung Galaxy S9",
+			"imageUrl": "https://rukminim1.flixcart.com/image/612/612/jtyouq80/cases-covers/back-cover/p/s/c/flipkart-smartbuy-rn7-matte-blk-original-imaff6xzgkcghjgn.jpeg?q=70",
+			"description": "Say it with Samsung Galaxy",
+			"inStock": false,
+			"price": "2005"
+		},
+		{
+			"id": 8,
+			"categoryId": 4,
+			"name": "Zebronics BT4440 RUCF Bluetooth Home Theatre",
+			"imageUrl": "https://rukminim1.flixcart.com/image/612/612/jvv9zm80/home-theatre-system/g/7/x/o-krisons-original-imafgzd392gjuavh.jpeg?q=70",
+			"description": "Bring home this set of Zebronics Bluetooth Speakers and discover a better way to watch movies and listen to your favourite tracks.",
+			"inStock": false,
+			"price": "1358"
+		},
+		{
+			"id": 9,
+			"categoryId": 3,
+			"name": "Mi Basic Wired Headset with Mic ",
+			"imageUrl": "https://rukminim1.flixcart.com/image/704/704/jjn6d8w0/headphone/y/q/m/flipkart-smartbuy-y32-original-imaf765fye8n2x2e.jpeg?q=70",
+			"description": "Super Extra Bass, Metal Sound Chamber, Dynamic Bass, HD Clear Sound, Aerospace Grade Metal Diaphragm For a Resonating Bass",
+			"inStock": false,
+			"price": "2345"
+		},
+		{
+			"id": 10,
+			"categoryId": 1,
+			"name": "Dell 14 3000 Core i3 7th Gen",
+			"imageUrl": "https://rukminim1.flixcart.com/image/312/312/jz7az680/computer/b/3/k/lenovo-na-laptop-original-imafj9wscwkeyu45.jpeg?q=70",
+			"description": "New Gen Laptop",
+			"inStock": false,
+			"price": "1823"
+		},
+		{
+			"id": 11,
+			"categoryId": 1,
+			"name": "HP Ideal 100 ",
+			"imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS1UD7vd5cmmkctP-eDbUnebr-eYIFNPHX_QeHgabtdkkKl092TTWjoUUlkABT2YYC1jx9bMthzY73qxuX5dKvYXb5rW-yogiKH3YNqbvQk6cc24ZfJqpue&usqp=CAc",
+			"description": "Bring home this HP laptop and do your work with the utmost ease even when you’re on the go.",
+			"inStock": true,
+			"price": "1752"
+		},
+		{
+			"id": 12,
+			"categoryId": 4,
+			"name": "JBL Bluetooth Speaker",
+			"imageUrl": "https://rukminim1.flixcart.com/image/704/704/speaker/mobile-tablet-speaker/z/x/e/jbl-jbl-trip-original-imaeej6yzzzztjzr.jpeg?q=70",
+			"description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+			"inStock": true,
+			"price": "2196"
+		},
+		{
+			"id": 13,
+			"categoryId": 4,
+			"name": "Sony BT40 Portable Bluetooth Speaker",
+			"imageUrl": "https://rukminim1.flixcart.com/image/612/612/j1pbc7k0/speaker/mobile-tablet-speaker/h/9/j/sony-srs-xb10-original-imaet84eymvbpvkj.jpeg?q=70",
+			"description": "Wireless music streaming via Bluetooth",
+			"inStock": true,
+			"price": "3276"
+		},
+		{
+			"id": 14,
+			"categoryId": 4,
+			"name": "Zoook Rocker Thunder Plus 40 W Bluetooth Party Speaker",
+			"imageUrl": "https://image.coolblue.nl/max/500x500/products/1146254",
+			"description": "Make your house parties seem more happening, with the help of the Zoook Rocker Thunder Plus Bluetooth party speaker set.",
+			"inStock": false,
+			"price": "1454"
+		},
+		{
+			"id": 15,
+			"categoryId": 4,
+			"name": "Handy Speakers",
+			"imageUrl": "https://rukminim1.flixcart.com/image/704/704/speaker/multimedia-speakers/r/m/6/hp-s3000-original-imadsjtgrujf7fbt.jpeg?q=70",
+			"description": "Music on the go",
+			"inStock": false,
+			"price": "1368"
+		},
+		{
+			"id": 16,
+			"categoryId": 3,
+			"name": "Philips Wired Headset with Mic",
+			"imageUrl": "https://rukminim1.flixcart.com/image/704/704/headphone/stereo-dynamic-headphone/r/f/f/philips-shl3060pp-00-original-imaebgcuzghdrgfe.jpeg?q=70",
+			"description": "Enjoy music with Philips",
+			"inStock": false,
+			"price": "2087"
+		},
+		{
+			"id": 17,
+			"categoryId": 1,
+			"name": "Asus Core i3 7th Gen - (4 GB/1 TB HDD/Windows 10 Home) X540UA-GQ682T Laptop",
+			"imageUrl": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS50dWqmOX5DpMNorUKoAi9-Grn7WXtPfAZA5CG1pPnpjTkkGFFr93YbAXqC0a_g7M3vLp9Uror8-HijvteV1yUIbnT8_bWktA8k7nTe7M&usqp=CAc",
+			"description": "Whether you want to play your favourite games, watch a movie, or finish the pending work that you took home, this laptop from ASUS helps you do all that seamlessly. ",
+			"inStock": true,
+			"price": "2523"
+		},
+		{
+			"id": 18,
+			"categoryId": 1,
+			"name": "Lenovo Ideapad 130 ",
+			"imageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTaGys19ZrMvsE99NRkpayHZ7dq7eDLDHWcDpax0FfO3ahozSvW5AMDLwgQxOCICxFbCuDvmxcGxv0l202epbGK_zWTwW-s6_BgONcuh5dL&usqp=CAc",
+			"description": "Bring home a new Lenova",
+			"inStock": true,
+			"price": "1118"
+		},
+		{
+			"id": 19,
+			"categoryId": 2,
+			"name": "Redmi 8A (Ocean Blue, 32 GB)  (3 GB RAM)",
+			"imageUrl": "https://static.toiimg.com/thumb/msid-66037958,width-640,resizemode-4/66037958.jpg",
+			"description": "High Definition Display",
+			"inStock": false,
+			"price": "1966"
+		},
+		{
+			"id": 20,
+			"categoryId": 1,
+			"name": "HP 14q Core i5 8th Gen - (8 GB/1 TB HDD/Windows 10 Home) 14q-cs0017tu Laptop",
+			"imageUrl": "https://rukminim1.flixcart.com/image/312/312/jqb8ccw0/computer/7/e/a/asus-na-laptop-original-imafccy62gz8vhsq.jpeg?q=70",
+			"description": "Work with ease on HP Laptop.",
+			"inStock": false,
+			"price": "2569"
+		},
+		{
+			"id": 21,
+			"categoryId": 5,
+			"name": "WOX TW64 Smartwatch ",
+			"imageUrl": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTfBUYFkcwnHSa64afU2dQtM19ERL6twE8ka7nT17KbZ8WSz1hwx9BvUfq9pVh0npoQq9OIdLQtUOkvXw-5Ey52EZPuB6-L3KpDNCkFiXdjvSxTP8czOT7noA&usqp=CAc",
+			"description": "Bracelet Pedometer SmartWatch Fitness Tracker Black Smartwatch",
+			"inStock": false,
+			"price": "2569"
+		},
+		{
+			"id": 22,
+			"categoryId": 6,
+			"name": "Acer (6th Gen) 32 GB 9.7 inch with Wi-Fi Only (Space Grey) Tablet",
+			"imageUrl": "https://rukminim1.flixcart.com/image/832/832/tablet/m/y/j/acer-iconia-w4-820-original-imadrhhd4svmqcdu.jpeg?q=70",
+			"description": "Imagine a world where a powerful yet compact device.",
+			"inStock": false,
+			"price": "2569"
+		}
+	],
+	"categories": [
+		{
+			"id": 1,
+			"name": "Laptops"
+		},
+		{
+			"id": 2,
+			"name": "Mobiles"
+		},
+		{
+			"id": 3,
+			"name": "Headphones"
+		},
+		{
+			"id": 4,
+			"name": "Speakers"
+		},
+		{
+			"id": 5,
+			"name": "SmartDevices"
+		},
+		{
+			"id": 6,
+			"name": "Tablets"
+		}
+	],
+	"users": [
+		{
+			"userid": 1,
+			"username": "SW",
+			"password": "Test123",
+			"role": "admin"
+		},
+		{
+			"userid": 2,
+			"username": "LJ",
+			"password": "Test345",
+			"role": "user"
+		}
+	]
+}

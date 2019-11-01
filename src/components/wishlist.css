@@ -1,0 +1,26 @@
+.wish-cart {
+	text-align: center;
+	justify-self: center;
+	margin: 0 auto;
+}
+
+.wish-cart table {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.wish-cart table tfoot {
+	font-weight: bold;
+}
+
+.wish-cart table td {
+	max-width: 200px;
+}
+
+.wish-cart .product-img {
+	width: 100px;
+}
+
+.wish-cart .alert {
+	margin-top: 100px;
+}

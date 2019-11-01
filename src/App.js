@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import store from "./store";
 
+import { Route } from "react-router-dom";
+
+import { Provider } from "react-redux";
+import { Container } from "react-bootstrap";
+import WishListContainer from "./components/WishListContainer";
+import Navigation from "./components/Navigation";
+import CategoryListContainer from "./components/CategoryListContainer";
+import ProductsListContainer from "./components/ProductsListContainer";
+import ShoppingCartContainer from "./components/ShoppingCartContainer";
+import DiscountNotificationContainer from "./components/DiscountNotificationContainer";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<Provider store={store}>
+			<Navigation />
+			<Container>
+				<Route exact path="/" component={CategoryListContainer}></Route>
+				<Route exact path="/" component={ProductsListContainer}></Route>
+				<Route exact path="/cart" component={ShoppingCartContainer}></Route>
+				<Route exact path="/wishlist" component={WishListContainer}></Route>
+			</Container>
+		</Provider>
+	);
 }
 
 export default App;

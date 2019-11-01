@@ -1,10 +1,11 @@
-import React from "react";
-import { Card, Button, Alert } from "react-bootstrap";
-import { addToWishList } from "../actions/wishlist";
-import { addToCart } from "../actions/cart";
-import { connect } from "react-redux";
+import React from 'react';
+import { Card, Button, Alert } from 'react-bootstrap';
+import { addToWishList } from '../actions/wishlist';
+import { addToCart } from '../actions/cart';
+import { connect } from 'react-redux';
 function ProductCard(props) {
-	const product = props.product;
+    const product = props.product;
+
 
 	return (
 		<Card className="product-card" style={{ width: "200px" }}>
@@ -38,26 +39,27 @@ function ProductCard(props) {
 			</Card.Body>
 		</Card>
 	);
+
 }
 const checkDuplicateWish = (product, wishlist, addToWishList) => {
-	if (wishlist.length === 0) {
-		addToWishList(product.id);
-	} else {
-		const duplicateFound = wishlist.find(wish => wish.id === product.id);
-		console.log(duplicateFound);
-		if (duplicateFound !== undefined) {
-			alert("Product already in the wishlist");
-		} else {
-			addToWishList(product.id);
-		}
-	}
+    if (wishlist.length === 0) {
+        addToWishList(product.id);
+    } else {
+        const duplicateFound = wishlist.find(wish => wish.id === product.id);
+        console.log(duplicateFound);
+        if (duplicateFound !== undefined) {
+            alert('Product already in the wishlist');
+        } else {
+            addToWishList(product.id);
+        }
+    }
 };
 const mapStateToProps = reduxState => {
-	return {
-		wishlist: reduxState.wishlist.wishlist
-	};
+    return {
+        wishlist: reduxState.wishlist.wishlist
+    };
 };
 export default connect(
-	mapStateToProps,
-	{ addToWishList, addToCart }
+    mapStateToProps,
+    { addToWishList, addToCart }
 )(ProductCard);

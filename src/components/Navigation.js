@@ -80,7 +80,9 @@ class Navigation extends Component {
             <div>
                 <Navbar bg="light" expand="lg">
                     <Navbar.Brand>
-                        <Link to="/">FlipKart</Link>
+                        <Link to="/" className="text-info">
+                            FlipKart
+                        </Link>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -107,7 +109,7 @@ class Navigation extends Component {
                                     value={this.state.password}
                                     onChange={this.handleChange}
                                 />
-                                <Button variant="outline-success" type="submit">
+                                <Button variant="outline-info" type="submit">
                                     Login
                                 </Button>
                             </Form>
@@ -151,7 +153,7 @@ class Navigation extends Component {
                                 value={this.state.search}
                                 onChange={this.handleChange}
                             />
-                            <Button type="submit" variant="outline-success">
+                            <Button type="submit" variant="outline-info">
                                 Search
                             </Button>
                         </Form>
@@ -176,7 +178,6 @@ class Navigation extends Component {
     }
 }
 const mapStateToProps = reduxState => {
-
     console.log('mapstate?', reduxState.users.users);
     return {
         users: reduxState.users.users,
@@ -184,7 +185,6 @@ const mapStateToProps = reduxState => {
         wishCount: reduxState.wishlist.wishlist.length,
         cartCount: reduxState.cart.cart.length
     };
-
 };
 export default connect(
     mapStateToProps,

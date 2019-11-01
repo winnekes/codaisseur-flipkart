@@ -9,19 +9,24 @@ import { Link } from 'react-router-dom';
 import { searchProducts } from '../actions/products';
 import { FaHeart } from 'react-icons/fa';
 import { FaShoppingCart } from 'react-icons/fa';
-
+import DiscountNotificationContainer from './DiscountNotificationContainer';
 class Navigation extends Component {
     state = {
         username: '',
         password: '',
         search: '',
         authorisedUser: '',
-        authorisedUsername: ''
+        authorisedUsername: '',
+        isVisible: true
     };
 
     componentDidMount() {
         this.props.getUsers();
     }
+
+    closeModal = () => {
+        this.setState({ isVisible: false });
+    };
 
     handleChange = event => {
         console.log(event.target.value);
@@ -73,44 +78,50 @@ class Navigation extends Component {
     render() {
         return (
             <div>
-                {this.state.authorisedUser === false && (
-                    <Alert variant={'danger'}>Invalid User or Password</Alert>
-                )}
-                {this.state.authorisedUser === true && (
-                    <Alert variant={'success'}>
-                        Hi {this.state.authorisedUsername}
-                    </Alert>
-                )}
-
                 <Navbar bg="light" expand="lg">
-                    <Navbar.Brand href="#home">Flipkart</Navbar.Brand>
+                    <Navbar.Brand>
+                        <Link to="/">FlipKart</Link>
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Form
-                            inline
-                            className="form-inline"
-                            onSubmit={this.handleSubmit}
-                        >
-                            <FormControl
-                                type="text"
-                                placeholder="Enter Username"
-                                className="mr-sm-2"
-                                name="username"
-                                value={this.state.username}
-                                onChange={this.handleChange}
-                            />
-                            <FormControl
-                                type="text"
-                                placeholder="Enter Password"
-                                className="mr-sm-2"
-                                name="password"
-                                value={this.state.password}
-                                onChange={this.handleChange}
-                            />
-                            <Button variant="outline-success" type="submit">
-                                Login
+                        {(this.state.authorisedUser === '' ||
+                            this.state.authorisedUser === false) && (
+                            <Form
+                                inline
+                                className="form-inline"
+                                onSubmit={this.handleSubmit}
+                            >
+                                <FormControl
+                                    type="text"
+                                    placeholder="Enter Username"
+                                    className="mr-sm-2"
+                                    name="username"
+                                    value={this.state.username}
+                                    onChange={this.handleChange}
+                                />
+                                <FormControl
+                                    type="text"
+                                    placeholder="Enter Password"
+                                    className="mr-sm-2"
+                                    name="password"
+                                    value={this.state.password}
+                                    onChange={this.handleChange}
+                                />
+                                <Button variant="outline-success" type="submit">
+                                    Login
+                                </Button>
+                            </Form>
+                        )}
+                        {this.state.authorisedUser && (
+                            <Button
+                                variant="outline-success"
+                                onClick={() =>
+                                    this.setState({ authorisedUser: '' })
+                                }
+                            >
+                                Logout
                             </Button>
-                        </Form>
+                        )}
                         <Nav className="mr-auto"></Nav>
                         <Nav className="wishlist-cart-icons">
                             <Link to="/wishlist">
@@ -146,11 +157,24 @@ class Navigation extends Component {
                         </Form>
                     </Navbar.Collapse>
                 </Navbar>
+                {this.state.authorisedUser === false && (
+                    <Alert variant={'danger'}>Invalid User or Password</Alert>
+                )}
+                {this.state.authorisedUser === true && (
+                    <Alert variant={'success'}>
+                        Hi {this.state.authorisedUsername}
+                    </Alert>
+                )}
+                {this.state.authorisedUser && (
+                    <DiscountNotificationContainer
+                        show={this.state.isVisible}
+                        closeModal={this.closeModal}
+                    />
+                )}
             </div>
         );
     }
 }
-
 const mapStateToProps = reduxState => {
     console.log('mapstate?', reduxState.users.users);
     return {

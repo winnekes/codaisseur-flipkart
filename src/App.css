@@ -19,3 +19,7 @@ h1 {
 	border-bottom: 1px solid lightgray;
 	padding-bottom: 10px;
 }
+
+.hidden {
+	display: none;
+}

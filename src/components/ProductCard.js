@@ -19,7 +19,7 @@ function ProductCard(props) {
                     Price: {product.price}€
                 </Card.Text>
                 <Button
-                    variant="info"
+                    variant="primary"
                     block
                     onClick={() => props.addToCart(product)}
                 >

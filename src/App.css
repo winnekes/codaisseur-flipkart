@@ -24,3 +24,8 @@ h1 {
 .hidden {
 	display: none;
 }
+
+.dropdown-toggle {
+	margin-top: 10px;
+	padding-bottom: 20px;
+}

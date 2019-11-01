@@ -1,21 +1,26 @@
 .products {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .product-card {
-    margin: 20px;
+	margin: 20px;
 }
 
 .product-card img {
-    max-height: 100%;
-    width: auto;
-    max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	max-width: 100%;
 }
 
 .product-card .image {
-    height: 250px;
-    text-align: center;
+	height: 250px;
+	text-align: center;
+}
+
+.textDescription {
+	font-size: 12px;
+	line-height: 0px;
 }

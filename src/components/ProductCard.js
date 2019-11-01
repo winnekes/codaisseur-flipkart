@@ -6,38 +6,40 @@ import { connect } from 'react-redux';
 function ProductCard(props) {
     const product = props.product;
 
-    return (
-        <Card className="product-card" style={{ width: '200px' }}>
-            <div className="image">
-                <Card.Img variant="top" src={product.imageUrl} />
-            </div>
-            <Card.Body>
-                <Card.Title>{product.name}</Card.Title>
-                <Card.Text>
-                    {product.description}
-                    <br />
-                    Price: {product.price}€
-                </Card.Text>
-                <Button block onClick={() => props.addToCart(product)}>
-                    Add to cart
-                </Button>
-                <Button
-                    variant="secondary"
-                    block
-                    //onClick={() => props.addToWishList(product.id)}
-                    onClick={() =>
-                        checkDuplicateWish(
-                            product,
-                            props.wishlist,
-                            props.addToWishList
-                        )
-                    }
-                >
-                    Add to WishList
-                </Button>
-            </Card.Body>
-        </Card>
-    );
+
+	return (
+		<Card className="product-card" style={{ width: "200px" }}>
+			<div className="image">
+				<Card.Img variant="top" src={product.imageUrl} />
+			</div>
+			<Card.Body>
+				<Card.Title>{product.name}</Card.Title>
+				<Card.Text>
+					<span className="textDescription">{product.description}</span>
+					<br />
+					Price: {product.price}€
+				</Card.Text>
+				<Button
+					variant="primary"
+					block
+					onClick={() => props.addToCart(product)}
+				>
+					Add to cart
+				</Button>
+				<Button
+					variant="secondary"
+					block
+					//onClick={() => props.addToWishList(product.id)}
+					onClick={() =>
+						checkDuplicateWish(product, props.wishlist, props.addToWishList)
+					}
+				>
+					Add to WishList
+				</Button>
+			</Card.Body>
+		</Card>
+	);
+
 }
 const checkDuplicateWish = (product, wishlist, addToWishList) => {
     if (wishlist.length === 0) {

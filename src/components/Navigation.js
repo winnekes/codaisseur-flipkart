@@ -76,6 +76,7 @@ class Navigation extends Component {
         this.setState({ search: '' });
     };
     render() {
+        console.log(this.props.match);
         return (
             <div>
                 <Navbar bg="light" expand="lg">
@@ -132,8 +133,8 @@ class Navigation extends Component {
                                     color="red"
                                     className="spacing"
                                 />
+                                (<span>{this.props.wishCount}</span>)
                             </Link>
-                            (<span>{this.props.wishCount}</span>)
                             <Link to="/cart">
                                 <FaShoppingCart
                                     size="2rem"
@@ -144,6 +145,7 @@ class Navigation extends Component {
                             </Link>
                         </Nav>
                         <Nav className="mr-auto"></Nav>
+
                         <Form inline onSubmit={this.handleSearch}>
                             <FormControl
                                 type="text"

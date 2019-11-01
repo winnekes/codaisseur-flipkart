@@ -12,8 +12,8 @@
 	margin-right: 10px;
 }
 
-.wishlist-cart-icons span {
-	color: blue;
+.wishlist-cart-icons a {
+	color: #46A8B3;
 	line-height: 30px;
 	font-size: 15px;
 }

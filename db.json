@@ -1,10 +1,9 @@
 {
-
 	"products": [
 		{
 			"id": 1,
 			"categoryId": 4,
-			"name": "Product 1",
+			"name": "Samsung Speakers",
 			"imageUrl": "https://rukminim1.flixcart.com/image/832/832/speaker/desktop-speaker-laptop-speaker-no-usb-power/x/z/u/iball-piano-i2-460-original-imaefhsaput3yhdw.jpeg?q=70",
 			"description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
 			"inStock": true,
@@ -240,5 +239,4 @@
 			"role": "user"
 		}
 	]
-
 }

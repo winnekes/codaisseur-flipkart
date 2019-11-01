@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import WishList from "./WishList";
-import { Button } from "react-bootstrap";
+import { Alert } from "react-bootstrap";
 import { Table } from "react-bootstrap";
 import "./shoppingcart.css";
 import { Link } from "react-router-dom";
@@ -13,12 +13,27 @@ class WishListContainer extends Component {
 		if (!this.props.wishedproducts) {
 			return <p>Loading...</p>;
 		} else {
-			return (
-				<div className="shopping-cart">
-					<Link to="/">back to home</Link>
-					<WishList wishedproducts={this.props.wishedproducts} />
-				</div>
-			);
+			if (this.props.wishedproducts.length === 0) {
+				return (
+					<Alert variant="info">
+						Your Wish list is empty. <br />
+						<Link to="/">Go back to our awesome store</Link>
+					</Alert>
+				);
+			} else {
+				return (
+					<div className="shopping-cart">
+						<div>
+							<Link to="/">back to home</Link>
+						</div>
+						<div>
+							<Link to="/cart">View Cart</Link>
+						</div>
+
+						<WishList wishedproducts={this.props.wishedproducts} />
+					</div>
+				);
+			}
 		}
 	}
 }

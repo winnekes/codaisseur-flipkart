@@ -2,7 +2,6 @@ import { resetSearch } from "../actions/products";
 export const SET_CATEGORY = "SET_CATEGORY";
 
 export function setCategory(category) {
-	console.log(`in setting category`);
 	return {
 		type: SET_CATEGORY,
 		payload: category

@@ -176,6 +176,7 @@ class Navigation extends Component {
     }
 }
 const mapStateToProps = reduxState => {
+
     console.log('mapstate?', reduxState.users.users);
     return {
         users: reduxState.users.users,
@@ -183,6 +184,7 @@ const mapStateToProps = reduxState => {
         wishCount: reduxState.wishlist.wishlist.length,
         cartCount: reduxState.cart.cart.length
     };
+
 };
 export default connect(
     mapStateToProps,

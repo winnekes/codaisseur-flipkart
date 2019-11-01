@@ -2,9 +2,11 @@ import React from "react";
 import { Table } from "react-bootstrap";
 import "./shoppingcart.css";
 import { Button } from "react-bootstrap";
+import { removeFromWishList } from "../actions/wishlist";
+import { addToCart } from "../actions/cart";
 
-import { Link } from "react-router-dom";
-export default function WishList(props) {
+import { connect } from "react-redux";
+function WishList(props) {
 	return (
 		<Table bordered>
 			{props.wishedproducts.map(prod => {
@@ -25,9 +27,20 @@ export default function WishList(props) {
 							<td>{prod.price}€</td>
 							<td>
 								<Button
+									variant="danger"
+									onClick={() => props.removeFromWishList(prod)}
+								>
+									X
+								</Button>
+							</td>
+							<td>
+								<Button
 									variant="primary"
 									block
-									onClick={() => this.props.addToCart(prod)}
+									onClick={() => {
+										props.addToCart(prod);
+										props.removeFromWishList(prod);
+									}}
 								>
 									Add to cart
 								</Button>
@@ -39,3 +52,8 @@ export default function WishList(props) {
 		</Table>
 	);
 }
+
+export default connect(
+	null,
+	{ addToCart, removeFromWishList }
+)(WishList);

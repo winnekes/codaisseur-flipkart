@@ -36,8 +36,6 @@ const getFilteredProductList = (products, filter, categoryId, searchText) => {
 };
 
 const mapStateToProps = state => {
-	console.log("mapstate:", state.products.products);
-
 	return {
 		products: getFilteredProductList(
 			state.products.products,

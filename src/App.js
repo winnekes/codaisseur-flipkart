@@ -17,7 +17,6 @@ function App() {
     return (
         <Provider store={store}>
             <Navigation />
-            <DiscountNotificationContainer />
             <Container>
                 <Route exact path="/" component={CategoryListContainer}></Route>
                 <Route exact path="/" component={ProductsListContainer}></Route>

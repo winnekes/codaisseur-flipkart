@@ -128,7 +128,7 @@ class Navigation extends Component {
 }
 
 const mapStateToProps = reduxState => {
-	console.log("mapstate?", reduxState.users.users);
+	//console.log("mapstate?", reduxState.users.users);
 	return {
 		users: reduxState.users.users,
 		validUser: reduxState.validUser,
@@ -139,4 +139,3 @@ export default connect(
 	mapStateToProps,
 	{ validateUser, getUsers, searchProducts }
 )(Navigation);
-

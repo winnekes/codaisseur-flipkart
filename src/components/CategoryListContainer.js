@@ -30,7 +30,6 @@ class CategoryListContainer extends Component {
 }
 
 const mapStateToProps = reduxState => {
-	console.log("mapstate?", reduxState.category.category);
 	return {
 		category: reduxState.category.category,
 		loading: reduxState.category.loading

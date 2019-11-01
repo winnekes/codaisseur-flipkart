@@ -14,7 +14,6 @@ function CategoryList(props) {
 					All Categories
 				</Nav.Item>
 				{props.category.map(category => {
-					console.log(category.id);
 					return (
 						<Nav.Item
 							key={category.id}
@@ -30,22 +29,6 @@ function CategoryList(props) {
 				</Nav.Item>
 			</Nav>
 		</div>
-		/* <div className="categoryClass">
-			<h1>Category List</h1>
-			<ListGroup>
-				{props.category.map(category => {
-					console.log(category.id);
-					return (
-						<ListGroup.Item
-							key={category.id}
-							onClick={() => props.clickCategory(category.id)}
-						>
-							{category.name}
-						</ListGroup.Item>
-					);
-				})}
-			</ListGroup>
-		</div> */
 	);
 }
 export default connect(

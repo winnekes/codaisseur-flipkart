@@ -4,6 +4,7 @@
 
 }
 
+
 .shopping-cart table {
     margin-top: 50px;
     text-align: center;
@@ -24,4 +25,18 @@
 
 .shopping-cart .alert {
     margin-top: 100px;
+}
+
+.discount {
+    background: #f0f0ef;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    margin: 20px auto;
+    padding: 20px 0;
+    width: 50%;
+}
+
+.discount input {
+    width: 80%;
+    margin: 0 auto;
 }

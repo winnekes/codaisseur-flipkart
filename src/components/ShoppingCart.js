@@ -5,6 +5,7 @@ import './shoppingcart.css';
 import { connect } from 'react-redux';
 import { removeFromCart, clearCart } from '../actions/cart';
 import { Link } from 'react-router-dom';
+import AddDiscountCodeForm from './AddDiscountCodeForm';
 
 function ShoppingCart(props) {
     return (
@@ -63,6 +64,7 @@ function ShoppingCart(props) {
                     </Button>{' '}
                     <br />
                     <br />
+                    <AddDiscountCodeForm />
                     <Link to="/">Back to our awesome store!</Link>
                 </div>
             )}

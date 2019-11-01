@@ -6,7 +6,6 @@ import { connect } from 'react-redux';
 function ProductCard(props) {
     const product = props.product;
 
-
 	return (
 		<Card className="product-card" style={{ width: "200px" }}>
 			<div className="image">

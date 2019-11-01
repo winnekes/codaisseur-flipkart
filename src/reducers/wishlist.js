@@ -6,8 +6,7 @@ export default (state = initialState, action) => {
 		case "ADD_TO_WISHLIST":
 			console.log("in reducer", action.payload);
 			return {
-				...state,
-				wishlist: [...state.wishlist, action.payload]
+				wishlist: [...state.wishlist, { id: action.payload }]
 			};
 		default:
 			return state;

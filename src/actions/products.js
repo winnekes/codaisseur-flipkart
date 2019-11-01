@@ -10,19 +10,6 @@ export function setProducts(products) {
 }
 
 export function getProducts() {
-	/* console.log("in products", id);
-	return function(dispatch, getState) {
-		console.log("What is in your state??", getState());
-		if (getState().products.length !== 0) return;
-		request
-			//`http://localhost:4000/categories/${encodeURIComponent(id)}/products`
-			.get(`http://localhost:4000/categories/1/products`)
-			.then(response => {
-				dispatch(setProducts(response.body));
-			})
-			.catch(err => console.log(err));
-	}; */
-
 	return function(dispatch) {
 		request
 			.get(`http://localhost:4000/products`)
@@ -30,5 +17,22 @@ export function getProducts() {
 				dispatch(setProducts(response.body));
 			})
 			.catch(err => console.log(err));
+	};
+}
+
+export const SHOW_PRODUCTS_BY_SEARCH = "SHOW_PRODUCTS_BY_SEARCH";
+
+export function searchProducts(searchText) {
+	return {
+		type: SHOW_PRODUCTS_BY_SEARCH,
+		payload: searchText
+	};
+}
+
+export const SEARCH_BY_CATEGORY = "SEARCH_BY_CATEGORY";
+export function clickCategory(id) {
+	return {
+		type: SEARCH_BY_CATEGORY,
+		payload: id
 	};
 }
